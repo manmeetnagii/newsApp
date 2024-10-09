@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar,
+.navLinks-container,
+.select-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks-container{
+  gap: 1rem;
+}
+
+.select-container>span,
+.navLinks-container>a {
+  text-decoration: none;
+  color: rgb(5, 63, 125);
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.news-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-container>span:hover,
+.navLinks-container a:hover{
+  transform: scale(1.05);
+  color: #000000;
+}
+
+.navbar{
+  background: #bed9fe;
+  padding: 0.5rem 2rem;
+  color: rgb(43, 13, 133);
+}
+
+.select-container{
+  gap: 0.5rem;
+}
+
+.logoAndHeading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 80px;
+  height: 40px;
+}
+
+.custom-select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1.5px solid #0021fa;
+  border-radius: 5px;
+  background-color: transparent;
+  appearance: none; 
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,5" style="fill:%23007bff;"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+.custom-select:focus {
+  outline: none;
+}
+
+.custom-select option {
+  padding: 10px;
+}
+
+marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #000000; 
+  color: white; 
+  font-size: 18px; 
+  padding: 10px 0;
+}
+
+marquee p {
+  display: inline-block;
+  color: rgb(255, 230, 0);
+  
+}
+
+marquee p span{
+  color: red;
+  font-weight: 600;
+}
