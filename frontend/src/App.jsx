@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     async function fetchApi() {
       try {
-        const result = await axios.get("https://newsapp-qx9t.onrender.com/fetch-api");
+        const result = await axios.get("https://newsapp-7fd5.onrender.com/fetch-api");
         setData(result.data);
       } catch (error) {
         toast.error("Error in fetching API")
