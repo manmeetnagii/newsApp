@@ -9,6 +9,10 @@ const app = express();
 
 app.use(cors());
 
+app.get('/', (req,res)=>{
+    res.send("Welcome to the server")
+})
+
 app.get("/fetch-api", async (req,res)=>{
     try {
         const result = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=52eacbc5074c4604b3d23fcb9c36dc20")
